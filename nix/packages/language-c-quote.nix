@@ -6,11 +6,11 @@
 }:
 mkDerivation {
   pname = "language-c-quote";
-  version = "0.12.2";
+  version = "2019-11-11";
   src = fetchgit {
     url = "https://github.com/sorki/language-c-quote/";
-    sha256 = "0283lg2bh2l7j9abv4j9mfhm0av32m74r812dy458nsdjqbsz5hw";
-    rev = "a6f14c2797001e9605bb649d02118f0b5be3b2bd";
+    sha256 = "1nff6pf46h12d5grmg711w3l221l0hv26lrhgkic6ziprppwb83x";
+    rev = "daf5410f16ee5d047381359de85239384f05efe1";
     fetchSubmodules = true;
   };
   libraryHaskellDepends = [

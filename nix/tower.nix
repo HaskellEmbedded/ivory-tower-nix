@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "sorki";
     repo = "tower";
-    rev = "23a54043bc383b804880e802310cf52ce2d1c196";
-    sha256 = "1vva44aq2wy1dnlpwpz71mz9q6pm9zskxrap2c4iirsfa9qvbqpd";
+    rev = "74b7aa731c8aed279e240e35eb13a097fa6e3d38";
+    sha256 = "01c345x3giycb5a6m4d3qih3pwzwhd6haqc2wcrga62619ljyy91";
   };
 
   # swap with src to build from this path
