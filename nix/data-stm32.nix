@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "HaskellEmbedded";
     repo = "data-stm32";
-    rev = "ef2b29b7a2fa5bad2a8d79fed9692211216803ad";
-    sha256 = "10sb5ayd58i2w3s81mzha54l3mql5bpcbh8asgazg08d94dnhx93";
+    rev = "2d90abc563a66b32e7a0f5cc5d28a0c2fcce1619";
+    sha256 = "0dnm93l6771pa9rmdgws0zvvrin8rr08avrzlwf9m3xd38dl4qqr";
   };
 
   # swap with src to build from this path
