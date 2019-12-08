@@ -10,6 +10,7 @@ compiler: [
 
   (import ./nix/ivory-tower-helloworld.nix)
   (import ./nix/ivory-tower-base.nix)
+  (import ./nix/ivory-tower-cayenne.nix)
   (import ./nix/ivory-tower-drivers.nix)
 
   (import ./nix/hastache.nix)
