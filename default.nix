@@ -3,5 +3,5 @@ let
   overlays = import ./overlay.nix compiler;
   pkgs = import ./nixpkgs.nix { inherit overlays; };
 in
-#pkgs.myHaskellPackages.ivory-bsp-stm32
+#pkgs.myHaskellPackages.mkImage "blink-test" {}
 pkgs.myHaskellPackages.ivory-tower-helloworld

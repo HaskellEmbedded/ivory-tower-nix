@@ -1,5 +1,6 @@
 compiler: [
   (import ./nix/compiler.nix compiler)
+  (import ./nix/lib.nix)
 
   (import ./nix/ivory.nix)
   (import ./nix/ivory-tower-stm32.nix)
