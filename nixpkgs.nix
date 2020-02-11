@@ -2,8 +2,8 @@
 # $ nix-prefetch-url --unpack https://github.com/NixOS/nixpkgs/archive/${REVISION}.tar.gz
 #
 let
-  rev="86ccc63008204a8ab5a7a52645bfb4ade3857818";
-  hash="133vkglgnrrk0jqms2iky5f1fli7bbk2idaxli2wk66isc66lbnm";
+  rev="e8531b8ed409cc892616ca5d4e63259e86b6d668";
+  hash="1vvx8gh16gdh5q39qp7v1cm5cnxn0jkdqirh9ihf9snrfc95mbn6";
 in
 import (
   fetchTarball {
