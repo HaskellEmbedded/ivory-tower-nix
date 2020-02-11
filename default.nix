@@ -2,6 +2,16 @@
 let
   overlays = import ./overlay.nix compiler;
   pkgs = import ./nixpkgs.nix { inherit overlays; };
+  scope = pkgs.myHaskellPackages;
 in
-#pkgs.myHaskellPackages.mkImage "blink-test" {}
-pkgs.myHaskellPackages.ivory-tower-helloworld
+rec {
+  hello = scope.ivory-tower-helloworld;
+
+  simpleblink = scope.mkImage "simpleblink-test" {} hello;
+  simpleblink-bluepill = scope.mkImage "simpleblink-test" {
+    defaultConf = pkgs.writeText "bluepill-platform" ''
+      [args]
+      platform = "bluepill"
+      '';
+  } hello;
+}

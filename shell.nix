@@ -6,7 +6,7 @@ nixpkgs.stdenv.mkDerivation {
   name = "ivory-tower-shell";
 
   buildInputs = [
-    default.env.nativeBuildInputs
+    default.hello.env.nativeBuildInputs
     nixpkgs.gnumake
     nixpkgs.gcc-arm-embedded
   ];
