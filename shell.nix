@@ -10,6 +10,9 @@ nixpkgs.stdenv.mkDerivation {
 
     pkgs.gnumake
     pkgs.gcc-arm-embedded
+
+    ivorypkgs.cabal-install
+    ivorypkgs.ghcid
   ];
 
   shellHook = ''
