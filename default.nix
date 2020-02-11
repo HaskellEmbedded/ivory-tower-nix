@@ -14,4 +14,7 @@ rec {
       platform = "bluepill"
       '';
   } hello;
+
+  ivorypkgs = scope;
+  inherit pkgs;
 }

@@ -5,10 +5,11 @@ in
 nixpkgs.stdenv.mkDerivation {
   name = "ivory-tower-shell";
 
-  buildInputs = [
-    default.hello.env.nativeBuildInputs
-    nixpkgs.gnumake
-    nixpkgs.gcc-arm-embedded
+  buildInputs = with default; [
+    hello.env.nativeBuildInputs
+
+    pkgs.gnumake
+    pkgs.gcc-arm-embedded
   ];
 
   shellHook = ''
