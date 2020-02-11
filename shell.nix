@@ -13,6 +13,8 @@ nixpkgs.stdenv.mkDerivation {
 
     ivorypkgs.cabal-install
     ivorypkgs.ghcid
+
+    hgdb
   ];
 
   shellHook = ''

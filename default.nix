@@ -7,6 +7,8 @@ in
 rec {
   hello = scope.ivory-tower-helloworld;
 
+  hgdb = scope.hgdb;
+
   simpleblink = scope.mkImage "simpleblink-test" {} hello;
   simpleblink-bluepill = scope.mkImage "simpleblink-test" {
     defaultConf = pkgs.writeText "bluepill-platform" ''

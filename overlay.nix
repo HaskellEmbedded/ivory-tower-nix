@@ -15,6 +15,9 @@ compiler: [
   (import ./nix/ivory-tower-drivers.nix)
 
   (import ./nix/hastache.nix)
+
+  (import ./nix/hgdb.nix)
+  (import ./nix/hgdbmi.nix)
   # ghc 881 fixes
   (import ./nix/exception-transformers.nix)
   (import ./nix/mainland-pretty.nix)
