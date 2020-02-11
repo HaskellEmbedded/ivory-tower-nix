@@ -6,8 +6,8 @@ let
   src = super.fetchFromGitHub {
     owner = "sorki";
     repo = "ivory-tower-stm32";
-    rev = "73278c74443f21d2fc1d9edaf90bf469f54054a6";
-    sha256 = "0krkh831xagm5dr0v8dprnrr8gdf1z1jg701mffadygvj4l9r8fd";
+    rev = "02a1ab4b405c1015f66a7f2ce84649dbce1e58e5";
+    sha256 = "1lccf0979frbf1jfqc2cisimnlrjv9pl468krg2q4z63yc4f32n7";
   };
 
   # swap with src to build from this path
