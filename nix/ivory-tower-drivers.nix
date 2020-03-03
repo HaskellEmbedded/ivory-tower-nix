@@ -6,8 +6,8 @@ let
   src = super.fetchFromGitHub {
     owner = "distrap";
     repo = "ivory-tower-drivers";
-    rev = "58250359c826398462006c6c5786003acc2e116a";
-    sha256 = "1ry7aryxd243s8lhpwipxa675dsvcy0p8a1y48clh4d1wdzkm9ab";
+    rev = "22b0771c419d4876eab15320f0e523054a82f01f";
+    sha256 = "06qdbc5k1wpnd7hkhsy4pf8jkm1qgw2np30py9lwa1cia5mr9h5z";
   };
 
   # swap with src to build from this path
