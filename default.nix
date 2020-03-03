@@ -3,6 +3,8 @@ let
   overlays = import ./overlay.nix compiler;
   pkgs = import ./nixpkgs.nix { inherit overlays; };
   scope = pkgs.myHaskellPackages;
+
+  mkShell = x: import ./makeshell.nix { inherit pkgs; ivorypkgs = scope; shellForPkg = x; };
 in
 rec {
   hello = scope.ivory-tower-helloworld;
@@ -19,4 +21,7 @@ rec {
 
   ivorypkgs = scope;
   inherit pkgs;
+
+  shell = mkShell hello;
+  inherit mkShell;
 }
