@@ -1,5 +1,6 @@
 compiler: [
   (import ./nix/compiler.nix compiler)
+  (import ./nix/env.nix)
   (import ./nix/lib.nix)
 
   (import ./nix/ivory.nix)
