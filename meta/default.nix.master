@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc881" }:
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc882" }:
 let
   itnSrc = builtins.fetchTarball https://github.com/HaskellEmbedded/ivory-tower-nix/archive/master.tar.gz;
   itn = import itnSrc { inherit compiler; };

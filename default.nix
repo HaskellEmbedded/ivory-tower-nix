@@ -1,4 +1,4 @@
-{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "ghc881" }:
+{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "ghc882" }:
 let
   overlays = import ./overlay.nix compiler;
   pkgs = import ./nixpkgs.nix { inherit overlays; };

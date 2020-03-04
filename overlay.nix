@@ -20,7 +20,7 @@ compiler: [
 
   (import ./nix/hgdb.nix)
   (import ./nix/hgdbmi.nix)
-  # ghc 881 fixes
+  # ghc 882 fixes
   (import ./nix/exception-transformers.nix)
   (import ./nix/mainland-pretty.nix)
   (import ./nix/language-c-quote.nix)

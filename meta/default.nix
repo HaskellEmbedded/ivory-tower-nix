@@ -1,4 +1,4 @@
-{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc881" }:
+{ nixpkgs ? import <nixpkgs> {}, compiler ? "ghc882" }:
 let
   itnSrc = nixpkgs.fetchFromGitHub {
     owner = "HaskellEmbedded";
