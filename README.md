@@ -36,4 +36,6 @@ Builds `result/image` for `bluepill` platform (STM32F103).
 nix-build -A simpleblink-bluepill
 ```
 
+## Binary cache
 
+Follow the instructions at https://ivory-tower-nix.cachix.org/
