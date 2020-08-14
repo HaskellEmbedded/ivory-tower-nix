@@ -13,6 +13,7 @@ compiler: [
   (import ./nix/ivory-tower-helloworld.nix)
   (import ./nix/ivory-tower-base.nix)
   (import ./nix/ivory-tower-cayenne.nix)
+  (import ./nix/ivory-tower-canopen.nix)
   (import ./nix/ivory-tower-lorawan.nix)
   (import ./nix/ivory-tower-posix.nix)
   (import ./nix/ivory-tower-drivers.nix)
