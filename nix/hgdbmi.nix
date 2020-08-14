@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "distrap";
     repo = "hgdbmi";
-    rev = "e0f908e9293aa1f029e98aa7f14a04afe964facf";
-    sha256 = "1ypfigwbja288qnhg0n42c0m6h4cr1hwnh3275dc1w2nv6xjgi1b";
+    rev = "e307c5d635b7af6506ae1719b40261a718103671";
+    sha256 = "0c16aap1p68b4ih3hpxnnqcy6jlp60p3qjhaqif3zam1799rjixl";
   };
 
   # swap with src to build from this path
