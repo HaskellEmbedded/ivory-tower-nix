@@ -23,6 +23,9 @@ compiler: [
 
   (import ./nix/hgdb.nix)
   (import ./nix/hgdbmi.nix)
+
+  (import ./nix/cidl.nix)
+
   # ghc 882 fixes
   (import ./nix/exception-transformers.nix)
   (import ./nix/mainland-pretty.nix)
