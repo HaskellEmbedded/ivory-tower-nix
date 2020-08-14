@@ -16,6 +16,7 @@ compiler: [
   (import ./nix/ivory-tower-lorawan.nix)
   (import ./nix/ivory-tower-posix.nix)
   (import ./nix/ivory-tower-drivers.nix)
+  (import ./nix/ivory-tower-hxstream.nix)
 
   (import ./nix/hastache.nix)
 
