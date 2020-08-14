@@ -3,8 +3,8 @@ let
   itnSrc = nixpkgs.fetchFromGitHub {
     owner = "HaskellEmbedded";
     repo = "ivory-tower-nix";
-    rev = "860fb41b4d489e536634fde23adb808c8cf337f1";
-    sha256 = "043xwy3i1d9m057fyd3n5bmbywqhd8hccdxby6div3hpsbhf966g";
+    rev = "c9dfbb383138c09bf854b4520bdaceb9032191cd";
+    sha256 = "0sk8wmg4y0130a4wdhc9547na3igs6pz0n3rs2x73i0c1p6fdx9w";
   };
   itn = import itnSrc { inherit compiler; };
   src = itn.pkgs.nix-gitignore.gitignoreSource [] ./.;
