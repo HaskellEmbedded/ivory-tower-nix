@@ -26,8 +26,6 @@ compiler: [
 
   (import ./nix/cidl.nix)
 
-  # ghc 882 fixes
-  (import ./nix/exception-transformers.nix)
-  (import ./nix/mainland-pretty.nix)
+  # not yet released
   (import ./nix/language-c-quote.nix)
 ]
