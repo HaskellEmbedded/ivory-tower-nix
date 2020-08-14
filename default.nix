@@ -21,8 +21,7 @@ rec {
   } hello;
 
   ivorypkgs = scope;
-  inherit pkgs;
 
-  shell = mkShell hello;
+  inherit pkgs;
   inherit mkShell;
 }
