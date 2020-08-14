@@ -1,6 +1,7 @@
-{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "ghc882" }:
+{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "default" }:
 let
-  overlays = import ./overlay.nix compiler;
+  comp = if compiler == "default" then "ghc8101" else compiler;
+  overlays = import ./overlay.nix comp;
   pkgs = import ./nixpkgs.nix { inherit overlays; };
   scope = pkgs.myHaskellPackages;
 
