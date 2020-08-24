@@ -7,6 +7,7 @@ pkgs.stdenv.mkDerivation {
 
     pkgs.gnumake
     pkgs.gcc-arm-embedded
+    pkgs.libev
 
     ivorypkgs.cabal-install
     ivorypkgs.ghcid
