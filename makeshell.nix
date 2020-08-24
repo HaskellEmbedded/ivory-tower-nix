@@ -15,6 +15,9 @@ pkgs.stdenv.mkDerivation {
   ];
 
   shellHook = ''
+    echo ""
     echo "Ivory Tower shell for ${shellForPkg.name}"
+
+    export "IVORY_TOWER_PROJECT=${shellForPkg.pname}"
   '';
 }
