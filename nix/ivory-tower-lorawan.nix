@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "hexamon-tech";
     repo = "ivory-tower-lorawan";
-    rev = "e387d93323355972ba7d3c700a8b55a1e2fa1669";
-    sha256 = "0zl0gp9p7v6n4mgyhqnijm1ich3h6j5gmz7ma5g73bvx9dmlslak";
+    rev = "51852a8f8a549fd13c285404c95c049eb93fee79";
+    sha256 = "00gp3zxyzf6nyb0yjibv1mbqwqs6xg3kmny3dsail8dpww6ifkfq";
   };
 
   # swap with src to build from this path

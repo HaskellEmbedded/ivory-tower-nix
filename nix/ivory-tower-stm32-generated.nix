@@ -6,8 +6,8 @@ let
   src = super.fetchFromGitHub {
     owner = "HaskellEmbedded";
     repo = "ivory-tower-stm32-generated";
-    rev = "28ecfeb69cba03852de29dae77b615b89ce2e926";
-    sha256 = "1r4prh77lczpvg5kbvc9nms97cm4w9p1rrfi7hww83hl2dbc4z6d";
+    rev = "591c2514f2b0d151272b67ee974a80d57f8783f7";
+    sha256 = "0ras8dh7w06cyfyr39ynx1j4d0sharjj79r53sjliwm7adxa3d23";
   };
 
   # swap with src to build from this path
