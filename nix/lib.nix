@@ -16,6 +16,7 @@ let
           ${pkg}/bin/${exeName}-gen --src-dir=build ${iFlags}
           make -C build
           mkdir $out
+          cp ${defConf} $out/default.conf
           cp build/image $out/
         '';
 
