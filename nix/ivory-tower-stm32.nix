@@ -2,9 +2,9 @@ self: super:
 let
 
   # update with
-  # nix-prefetch-git https://github.com/sorki/ivory-tower-stm32 <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/distrap/ivory-tower-stm32 <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "sorki";
+    owner = "distrap";
     repo = "ivory-tower-stm32";
     rev = "4e824bee3c707fc67ac2a4d2c350354c9b919ab0";
     sha256 = "0lcidzq4408dxskd7d9vy5nyzap2wdccz4awvx71nw46hmi5mqsr";

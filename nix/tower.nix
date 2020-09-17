@@ -1,9 +1,9 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/sorki/tower <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/distrap/tower <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "sorki";
+    owner = "distrap";
     repo = "tower";
     rev = "7a781ac664f19d4281fc9f2d092b824ff08b2fa4";
     sha256 = "06dp398kwnspv5rg3z4qzk2z1yb7q5yz8i1w1xh98mbp4gxdv5kp";
