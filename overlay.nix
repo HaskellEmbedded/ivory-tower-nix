@@ -26,6 +26,9 @@ compiler: [
 
   (import ./nix/cidl.nix)
 
+  # apps
+  (import ./nix/can4disco.nix)
+
   # not yet released
   (import ./nix/language-c-quote.nix)
 ]
