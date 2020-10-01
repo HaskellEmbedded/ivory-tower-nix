@@ -4,13 +4,29 @@ Nix files and Haskell overlay containing Ivory/Tower stack.
 
 Compatible with GHC 8.10.1
 
-## Usage
+## Development shell for `ivory-tower-helloworld`
 
 Install [Nix](https://nixos.org/nix/) and run
 
 ```
 nix-shell
 ```
+
+to enter development shell for [ivory-tower-helloworld](https://github.com/distrap/ivory-tower-helloworld).
+
+## Firmware builds
+
+It's also possible to build firmware images for specific platform using
+
+```
+nix-build -A hello.simpleblink-test.f4disco.image
+# or
+nix-build -A hello.simpleblink-test.f4disco.runner
+```
+
+The triple is `firmware-project.appOrTestName.platform` and you can explore available
+targets for `ivory-tower-helloworld` via `nix repl`, using `:l ./.` to load `default.nix` into scope and
+entering `hello.<TAB>`.
 
 ## Other targets
 
@@ -30,7 +46,7 @@ nix-build -A simpleblink
 
 ### Image for Bluepill
 
-Builds `result/image` for `bluepill` platform (STM32F103).
+Builds `result/image` for `bluepill` platform (`STM32F103`).
 
 ```
 nix-build -A simpleblink-bluepill
