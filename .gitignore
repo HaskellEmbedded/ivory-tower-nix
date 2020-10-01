@@ -1,0 +1,6 @@
+attic/*
+secrets/*
+dist
+dist-newstyle
+result*
+.history
