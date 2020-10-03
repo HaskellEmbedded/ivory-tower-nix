@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo nix-build \
+  --option substituters ivory-tower-nix.cachix.org \
+  --option trusted-public-keys ivory-tower-nix.cachix.org-1:LgZXiu3dz7hjbW6X527+4NM6dBJQ6eg8phqMOcS/fu0= \
+  -A simpleblink
