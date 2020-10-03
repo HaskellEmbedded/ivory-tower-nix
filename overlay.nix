@@ -25,6 +25,7 @@ compiler: [
   (import ./nix/hgdbmi.nix)
 
   (import ./nix/cidl.nix)
+  (import ./nix/gidl.nix)
 
   # apps
   (import ./nix/can4disco.nix)
