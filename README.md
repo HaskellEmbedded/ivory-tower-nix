@@ -55,3 +55,13 @@ nix-build -A simpleblink-bluepill
 ## Binary cache
 
 Follow the instructions at https://ivory-tower-nix.cachix.org/
+
+## Developing
+
+To enter development shell for specific package it is possible to use e.g.
+
+```
+nix-shell -A ivorypkgs.ivory.env default.nix
+```
+
+to enter shell where `ivory` package can be built with `cabal`.
