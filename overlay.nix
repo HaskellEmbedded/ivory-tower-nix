@@ -28,7 +28,4 @@ compiler: [
   # apps
   (import ./nix/can4disco.nix)
   (import ./nix/monstick-firmware.nix)
-
-  # not yet released
-  (import ./nix/language-c-quote.nix)
 ]
