@@ -19,8 +19,6 @@ compiler: [
   (import ./nix/ivory-tower-drivers.nix)
   (import ./nix/ivory-tower-hxstream.nix)
 
-  (import ./nix/hastache.nix)
-
   (import ./nix/hgdb.nix)
   (import ./nix/hgdbmi.nix)
 
