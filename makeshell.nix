@@ -5,6 +5,7 @@ pkgs.stdenv.mkDerivation {
   buildInputs = [
     shellForPkg.env.nativeBuildInputs
 
+    pkgs.cutecom
     pkgs.gnumake
     pkgs.gcc-arm-embedded
     pkgs.libev
