@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "distrap";
     repo = "ivory";
-    rev = "3e680463093c0dd592c31663db86842221f0dd58";
-    sha256 = "1fk2z6gaqgf472kd0hxv9idz0zibkrrz3pjdc5whkbixp951ywr6";
+    rev = "138b308e24495b6fc522c867aa75498c67fddc7e";
+    sha256 = "18n7hil8372rj6201wpmqi67gfhmh2q5c773mdgiy0ips0cbm6a3";
   };
 
   # swap with src to build from this path
@@ -24,6 +24,7 @@ let
     "ivory-quickcheck"
     "ivory-serialize"
     "ivory-stdlib"
+    "ivory-tasty"
   ];
 in
 {
