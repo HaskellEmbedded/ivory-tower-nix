@@ -8,6 +8,7 @@ compiler: [
   (import ./nix/tower.nix)
 
   (import ./nix/data-stm32.nix)
+  (import ./nix/data-svd.nix)
   (import ./nix/ivory-tower-stm32-generated.nix)
 
   (import ./nix/ivory-tower-helloworld.nix)
