@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "distrap";
     repo = "data-svd";
-    rev = "fec58f6e0afaeef97668eeb6834cc2fe40f2eec9";
-    sha256 = "1i1kjjjwn9nqjbb2ad8fnpbsqabjzp39pnmhqgf1bw6vbqniwgzn";
+    rev = "ff3d6b8cbe1d4d9bbe0c3a04b18141f692ee64d6";
+    sha256 = "002galxgrpgsb4ii9cldgjw8wmfnpznqh9maq3n9d9b3kxhplq2l";
   };
 
   # swap with src to build from this path
