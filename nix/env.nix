@@ -6,7 +6,8 @@ self: super:
         mkDerivation = x: (hsuper.mkDerivation x).override(
           {
             # disable library profiling globally
-            enableLibraryProfiling = false;
+            # - expensive to rebuild every haskell dep
+            # enableLibraryProfiling = false;
           });
           # on package level we can use
           # super.haskell.lib.disableLibraryProfiling

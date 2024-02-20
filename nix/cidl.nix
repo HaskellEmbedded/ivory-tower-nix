@@ -2,9 +2,9 @@ self: super:
 let
 
   # update with
-  # nix-prefetch-git https://github.com/distrap/cidl <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/cidl <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "cidl";
     rev = "fe515b9dfdd58ecec5162e91a6a05850d5e68bac";
     sha256 = "14bdpvhi0q0ndyg07rnkwl4arizxs9skiaccb2f5wklxazjkjxkr";

@@ -1,9 +1,9 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/ivory-tower-hxstream <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/ivory-tower-hxstream <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "ivory-tower-hxstream";
     rev = "a27c1bfac3aa7616060341e5cdad6e5f6edffac3";
     sha256 = "0nyrfblk7hq5rw03k1gxfqpajs7bl7d33qd5zgphy0jlxgbws4jq";

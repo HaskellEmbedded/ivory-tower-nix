@@ -1,12 +1,12 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/ivory <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/ivory <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "ivory";
-    rev = "3e680463093c0dd592c31663db86842221f0dd58";
-    sha256 = "1fk2z6gaqgf472kd0hxv9idz0zibkrrz3pjdc5whkbixp951ywr6";
+    rev = "c93b22647819cf13dd8d63c819d8754173e184d5";
+    sha256 = "0gx0h40bdqjbx83fxqmk8hfaq0l1d625pzrx0kn827figzxdsbig";
   };
 
   # swap with src to build from this path
@@ -24,6 +24,7 @@ let
     "ivory-quickcheck"
     "ivory-serialize"
     "ivory-stdlib"
+    "ivory-tasty"
   ];
 in
 {

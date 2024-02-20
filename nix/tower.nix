@@ -1,12 +1,12 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/tower <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/tower <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "tower";
-    rev = "7a781ac664f19d4281fc9f2d092b824ff08b2fa4";
-    sha256 = "06dp398kwnspv5rg3z4qzk2z1yb7q5yz8i1w1xh98mbp4gxdv5kp";
+    rev = "7ff133e172eddbf01a0b44333ec2fb80404afd47";
+    sha256 = "080q2qf33lwz9bv3pbk8vgiq5rks01bnx0vzim4dd8wskk90zahq";
   };
 
   # swap with src to build from this path

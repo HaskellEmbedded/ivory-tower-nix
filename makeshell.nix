@@ -5,13 +5,14 @@ pkgs.stdenv.mkDerivation {
   buildInputs = [
     shellForPkg.env.nativeBuildInputs
 
+    pkgs.cutecom
     pkgs.gnumake
     pkgs.gcc-arm-embedded
     pkgs.libev
 
     ivorypkgs.cabal-install
     ivorypkgs.ghcid
-    ivorypkgs.hgdb
+    ivorypkgs.emhell
   ];
 
   shellHook = ''

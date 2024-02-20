@@ -7,7 +7,7 @@ let
     pkg:
       let
         defConf = if isNull defaultConf then "${pkg.src}/default.conf" else defaultConf;
-        iFlags = super.stdenv.lib.concatStringsSep " " ivoryFlags;
+        iFlags = super.lib.concatStringsSep " " ivoryFlags;
       in
       super.runCommand "${exeName}${addName}-image"
         { buildInputs = with super; [ gnumake gcc-arm-embedded ]; }

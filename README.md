@@ -12,7 +12,7 @@ Install [Nix](https://nixos.org/nix/) and run
 nix-shell
 ```
 
-to enter development shell for [ivory-tower-helloworld](https://github.com/distrap/ivory-tower-helloworld).
+to enter development shell for [ivory-tower-helloworld](https://github.com/DistRap/ivory-tower-helloworld).
 
 ## Firmware builds
 
@@ -30,10 +30,10 @@ entering `hello.<TAB>`.
 
 ## Other targets
 
-### [hgdb](https://github.com/distrap/hgdb)
+### [emhell](https://github.com/DistRap/emhell)
 
 ```
-nix-build -A hgdb
+nix-build -A emhell
 ```
 
 ### Full embedded image build
@@ -55,3 +55,13 @@ nix-build -A simpleblink-bluepill
 ## Binary cache
 
 Follow the instructions at https://ivory-tower-nix.cachix.org/
+
+## Developing
+
+To enter development shell for specific package it is possible to use e.g.
+
+```
+nix-shell -A ivorypkgs.ivory.env default.nix
+```
+
+to enter shell where `ivory` package can be built with `cabal`.
