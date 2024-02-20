@@ -1,10 +1,10 @@
 self: super:
 let
   src = super.fetchFromGitHub {
-    owner = "hexamon-tech";
+    owner = "DistRap";
     repo = "monstick-firmware";
-    rev = "35d9fe2b67f954b21bf984e270f835a310e2ad8e";
-    sha256 = "0ahh6fqkv3dzmqphbg7cxp7v3aizlbf3mcnvzicdkl497n5yj4rv";
+    rev = "e733664bb795c0eadc90e0d7a3d84d84f0e2bb04";
+    sha256 = "1bm1mahspb6cijyfldmnw50q5pv4w8wgrxp19wr0cxcjgf6brkkx";
   };
 
   srcX = ../../monstick-firmware;
