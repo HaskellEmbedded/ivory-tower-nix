@@ -12,7 +12,7 @@ Install [Nix](https://nixos.org/nix/) and run
 nix-shell
 ```
 
-to enter development shell for [ivory-tower-helloworld](https://github.com/distrap/ivory-tower-helloworld).
+to enter development shell for [ivory-tower-helloworld](https://github.com/DistRap/ivory-tower-helloworld).
 
 ## Firmware builds
 
@@ -30,7 +30,7 @@ entering `hello.<TAB>`.
 
 ## Other targets
 
-### [emhell](https://github.com/distrap/emhell)
+### [emhell](https://github.com/DistRap/emhell)
 
 ```
 nix-build -A emhell

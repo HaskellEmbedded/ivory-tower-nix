@@ -1,7 +1,7 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/language-c-quote <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/language-c-quote <OPTIONAL_REV>
   src = super.fetchFromGitHub {
     owner = "mainland";
     repo = "language-c-quote";

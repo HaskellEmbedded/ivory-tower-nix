@@ -1,9 +1,9 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/hgdbmi <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/hgdbmi <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "hgdbmi";
     rev = "e7dc8878eea4520d1e132ea917f90ee6afb5aacd";
     sha256 = "0ys7iyy4c4rg10y926xyn0d9q1qnlgw8r02fy3pi2jshh0f3s6i5";

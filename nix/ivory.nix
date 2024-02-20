@@ -1,9 +1,9 @@
 self: super:
 let
   # update with
-  # nix-prefetch-git https://github.com/distrap/ivory <OPTIONAL_REV>
+  # nix-prefetch-git https://github.com/DistRap/ivory <OPTIONAL_REV>
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "ivory";
     rev = "c93b22647819cf13dd8d63c819d8754173e184d5";
     sha256 = "0gx0h40bdqjbx83fxqmk8hfaq0l1d625pzrx0kn827figzxdsbig";

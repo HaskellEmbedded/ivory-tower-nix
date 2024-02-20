@@ -1,7 +1,7 @@
 self: super:
 let
   src = super.fetchFromGitHub {
-    owner = "distrap";
+    owner = "DistRap";
     repo = "ivory-tower-helloworld";
     rev = "b93d39413c8f693b8fe1ad1fc0738df19e291cb7";
     sha256 = "15msc0s1v1d6cxs5r7lcchslxalvwsqng3xdl5g2frk0i8ii7h2x";
