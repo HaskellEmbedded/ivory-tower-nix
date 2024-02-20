@@ -20,7 +20,7 @@ compiler: [
   (import ./nix/ivory-tower-drivers.nix)
   (import ./nix/ivory-tower-hxstream.nix)
 
-  (import ./nix/hgdb.nix)
+  (import ./nix/emhell.nix)
   (import ./nix/hgdbmi.nix)
 
   (import ./nix/cidl.nix)

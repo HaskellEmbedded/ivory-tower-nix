@@ -18,7 +18,7 @@ rec {
   slcan = can4disco.slcan-test.f4disco.image;
   monstick-lorawan = monstick.lorawan.monstick.image;
 
-  hgdb = scope.hgdb;
+  emhell = scope.emhell;
   ivorypkgs = scope;
 
   inherit pkgs;

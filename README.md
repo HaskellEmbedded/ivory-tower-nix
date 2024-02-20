@@ -30,10 +30,10 @@ entering `hello.<TAB>`.
 
 ## Other targets
 
-### [hgdb](https://github.com/distrap/hgdb)
+### [emhell](https://github.com/distrap/emhell)
 
 ```
-nix-build -A hgdb
+nix-build -A emhell
 ```
 
 ### Full embedded image build

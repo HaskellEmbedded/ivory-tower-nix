@@ -12,7 +12,7 @@ pkgs.stdenv.mkDerivation {
 
     ivorypkgs.cabal-install
     ivorypkgs.ghcid
-    ivorypkgs.hgdb
+    ivorypkgs.emhell
   ];
 
   shellHook = ''
