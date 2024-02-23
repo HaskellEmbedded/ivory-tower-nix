@@ -6,8 +6,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "cidl";
-    rev = "fe515b9dfdd58ecec5162e91a6a05850d5e68bac";
-    sha256 = "14bdpvhi0q0ndyg07rnkwl4arizxs9skiaccb2f5wklxazjkjxkr";
+    rev = "8fcb2893e62f6c96779f0affb8c25b9b07acaed6";
+    sha256 = "0fwryk9z7b64806k73wraqjh9h4g3d4d4c23577wahcilhl75fqd";
   };
 
   # swap with src to build from this path
