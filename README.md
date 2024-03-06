@@ -65,3 +65,9 @@ nix-shell -A ivorypkgs.ivory.env default.nix
 ```
 
 to enter shell where `ivory` package can be built with `cabal`.
+
+Alternatively you can pass package argument to `shell.nix`:
+
+```
+nix-shell --argstr package ivory-tower-canopen
+```
