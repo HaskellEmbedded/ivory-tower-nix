@@ -6,8 +6,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "ivory-tower-canopen";
-    rev = "6356984d23c5e70a4a19d767c7a991d01e71c11c";
-    sha256 = "00k7k813g68yvwjsc13vcink30skwghnw52rszwz18vgj7xf6vjm";
+    rev = "833a81c3d4c26cf93b79458b3df44850b7a3f3a1";
+    sha256 = "13qrf9hrmf2kizkzqliqz2ivylxkmzbddbybnfkkw75hdl2prw0r";
   };
 
   # swap with src to build from this path
