@@ -32,10 +32,6 @@ let
     super.runCommand "${schName}-schema"
       { buildInputs = [ generatorPkg ]; }
       ''
-        export IVORY_SRC=${hself.ivory.src}
-        export TOWER_SRC=${hself.tower.src}
-        export IVORY_TOWER_STM32_SRC=${fakeRepo}
-        export IVORY_TOWER_CANOPEN_SRC=${hself.ivory-tower-canopen-src}
         cp ${pkg}/Makefile .
         make
 
