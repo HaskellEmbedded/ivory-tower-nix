@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "ivory-tower-posix";
-    rev = "6d0b8116b1e8f9cb9e8bea40735642d6bea2817f";
-    sha256 = "0cb7fjy6m351r1y77dx51cp015khqmv3lr11hpnkdwfbabhqaani";
+    rev = "4dc3141512ada9bff196eb201128e2b30c808670";
+    sha256 = "0lfq9i82nl2agzpa36il570ryxcc7ahn390pxchcxm0bpw70gx25";
   };
 
   # swap with src to build from this path
