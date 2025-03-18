@@ -3,4 +3,3 @@
 
 nix-build | cachix push ivory-tower-nix
 ./scripts/cache_shell
-#|| ./cache_shell
