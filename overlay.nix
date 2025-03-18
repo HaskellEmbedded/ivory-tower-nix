@@ -37,4 +37,6 @@ compiler: [
   # only due to uni-patterns warning
   (import ./nix/language-c-quote.nix)
 
+  # temporary until release
+  (import ./nix/data-prometheus.nix)
 ]
