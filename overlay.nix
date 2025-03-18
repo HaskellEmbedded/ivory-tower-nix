@@ -22,6 +22,8 @@ compiler: [
 
   (import ./nix/emhell.nix)
   (import ./nix/hgdbmi.nix)
+  (import ./nix/network-can.nix)
+  (import ./nix/network-canopen.nix)
 
   (import ./nix/cidl.nix)
   (import ./nix/gidl.nix)
