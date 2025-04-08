@@ -1,4 +1,4 @@
-{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "default" }:
+{ compiler ? "default", ... }:
 let
   comp = if compiler == "default" then "ghc966" else compiler;
   overlays = import ./overlay.nix comp;
