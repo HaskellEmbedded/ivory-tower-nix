@@ -19,6 +19,7 @@ compiler: [
   (import ./nix/ivory-tower-posix.nix)
   (import ./nix/ivory-tower-drivers.nix)
   (import ./nix/ivory-tower-hxstream.nix)
+  (import ./nix/ivory-tower-net.nix)
 
   (import ./nix/emhell.nix)
   (import ./nix/hgdbmi.nix)
