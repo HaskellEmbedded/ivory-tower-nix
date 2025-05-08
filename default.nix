@@ -18,7 +18,20 @@ rec {
   slcan = can4disco.slcan-test.f4disco.image;
   monstick-lorawan = monstick.lorawan.monstick.image;
 
-  emhell = scope.emhell;
+  inherit (scope)
+    ivory-tower-base
+    ivory-tower-cayenne
+    ivory-tower-canopen
+    ivory-tower-drivers
+    ivory-tower-helloworld
+    ivory-tower-hxstream
+    ivory-tower-lorawan
+    ivory-tower-posix
+    ivory-tower-net
+    cidl
+    gidl
+    emhell;
+
   ivorypkgs = scope;
 
   inherit pkgs;
