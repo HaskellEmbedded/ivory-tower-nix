@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "network-can";
-    rev = "92fc3444b0cbf5cb040b7e415f333778ea2cbb9b";
-    sha256 = "1cpgd6nj6631k9r1v0ihck2pip97qfvlv5dkbs50rxn0abslgv19";
+    rev = "d594157c6a373e3afedfce46fd38d36344ca60bd";
+    sha256 = "1zk1gfds6a4lskj997g22z9nqlxyxfrs12bi60pf8nf3frg89l5z";
   };
 
   # swap with src to build from this path
