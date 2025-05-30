@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "can4disco";
-    rev = "7374292464e0aee73630c358f5a0f9cd7fa320f6";
-    sha256 = "1qjs8dni1w2lila871qpk76bbhzrrl16z4m30vf6rr1ajwi2q521";
+    rev = "1582e3823b2591c992b820a6d473c5e135ef435e";
+    sha256 = "10mpk33rvhizjd0py67zy70g0wlysx19mkmnjgahym72ddlhdr9c";
   };
 
   # swap with src to build from this path
