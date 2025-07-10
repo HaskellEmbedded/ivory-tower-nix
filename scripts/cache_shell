@@ -1,6 +1,8 @@
 #!/usr/bin/env nix-shell
 #! nix-shell -i bash -p cachix
 
+set -euo pipefail
+
 pwd
 nix-shell --command 'exit'
 nix-store -qR --include-outputs $(nix-instantiate shell.nix) \
