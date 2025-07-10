@@ -3,8 +3,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "monstick-firmware";
-    rev = "e733664bb795c0eadc90e0d7a3d84d84f0e2bb04";
-    sha256 = "1bm1mahspb6cijyfldmnw50q5pv4w8wgrxp19wr0cxcjgf6brkkx";
+    rev = "f36da317ca42f6e6cbb0fd4ea8d2e54649155bc9";
+    sha256 = "1pd60vsc06qy71j5r8qkfhp73ps7jr8dxb9zm6f2qwx5vsa6yi7b";
   };
 
   srcX = ../../monstick-firmware;
