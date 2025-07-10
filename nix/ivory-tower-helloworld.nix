@@ -3,8 +3,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "ivory-tower-helloworld";
-    rev = "93663dea4f31845432918d345a2f1d727a2d6a5d";
-    sha256 = "1annnvrilyg77qjlgxc6w2a81npjyqjhs6209vd9pq9rgqg4v2l2";
+    rev = "b511eb27ef80493fed1c0f272a2c5a34226371e8";
+    sha256 = "1nb91vhqxwp8lcg2l4398sg80hdi6b2paz2ld3wcx9j38x6snwx3";
   };
 
   srcX = ../../ivory-tower-helloworld;
