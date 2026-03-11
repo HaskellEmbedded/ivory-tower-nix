@@ -1,8 +1,8 @@
-{ compiler ? "default", ... }:
+{ compiler ? "default", system ? builtins.currentSystem, ... }:
 let
   comp = if compiler == "default" then "ghc966" else compiler;
   overlays = import ./overlay.nix comp;
-  pkgs = import ./nixpkgs.nix { inherit overlays; };
+  pkgs = import ./nixpkgs.nix { inherit overlays system; };
   scope = pkgs.myHaskellPackages;
 
   mkShell = x: import ./makeshell.nix { inherit pkgs; ivorypkgs = scope; shellForPkg = x; };
