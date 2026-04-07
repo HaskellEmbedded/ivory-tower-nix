@@ -5,8 +5,8 @@ let
   src = super.fetchFromGitHub {
     owner = "DistRap";
     repo = "network-canopen";
-    rev = "09680c646540ddcdc788485999b43d445e1729b5";
-    sha256 = "1m9mvp3kqhmnynfjqm910w5lclnrsxidlc7217v3wc0k069a722v";
+    rev = "55f3ad6b448942fcc4628631914e579b43faebe0";
+    sha256 = "0pw60hhhdmckk8fb0y3wgmmp02673pd917anvkr6sd705zqglaiw";
   };
 
   # swap with src to build from this path
