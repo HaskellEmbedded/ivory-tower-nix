@@ -29,8 +29,13 @@ rec {
     ivory-tower-posix
     ivory-tower-net
     cidl
+    data-prometheus
     gidl
-    emhell;
+    hgdbmi
+    emhell
+    network-can
+    network-canopen
+    ;
 
   ivorypkgs = scope;
 
