@@ -1,11 +1,18 @@
-{ compiler ? "default", system ? builtins.currentSystem, ... }:
+{ compiler ? "default"
+, pkgs ? null
+, system ? builtins.currentSystem
+, ... }:
 let
-  comp = if compiler == "default" then "ghc966" else compiler;
+  comp = if compiler == "default" then "ghc9103" else compiler;
   overlays = import ./overlay.nix comp;
-  pkgs = import ./nixpkgs.nix { inherit overlays system; };
-  scope = pkgs.myHaskellPackages;
+  overlayedPkgs =
+    if pkgs == null
+    then import ./nixpkgs.nix { inherit overlays system; }
+    else import pkgs.path { inherit overlays system; };
 
-  mkShell = x: import ./makeshell.nix { inherit pkgs; ivorypkgs = scope; shellForPkg = x; };
+  scope = overlayedPkgs.myHaskellPackages;
+
+  mkShell = x: import ./makeshell.nix { pkgs = overlayedPkgs; ivorypkgs = scope; shellForPkg = x; };
 in
 rec {
   hello = scope.genTargets scope.ivory-tower-helloworld;
@@ -39,6 +46,12 @@ rec {
 
   ivorypkgs = scope;
 
-  inherit pkgs;
   inherit mkShell;
+
+  # combined overlay
+  overlay = overlayedPkgs.lib.composeManyExtensions overlays;
+  # or as list of overlays
+  inherit overlays;
+
+  pkgs = overlayedPkgs;
 }
