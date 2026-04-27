@@ -11,8 +11,6 @@ let
     else import pkgs.path { inherit overlays system; };
 
   scope = overlayedPkgs.myHaskellPackages;
-
-  mkShell = x: import ./makeshell.nix { pkgs = overlayedPkgs; ivorypkgs = scope; shellForPkg = x; };
 in
 rec {
   hello = scope.genTargets scope.ivory-tower-helloworld;
@@ -42,11 +40,11 @@ rec {
     emhell
     network-can
     network-canopen
+
+    mkShell
     ;
 
   ivorypkgs = scope;
-
-  inherit mkShell;
 
   # combined overlay
   overlay = overlayedPkgs.lib.composeManyExtensions overlays;

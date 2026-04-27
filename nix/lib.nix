@@ -40,6 +40,31 @@ let
         cp -a ${schName}-schema-tower  $out/
       '';
 
+  mkShell = super: hself: shellForPkg:
+    super.stdenv.mkDerivation {
+      name = "ivory-tower-shell-${shellForPkg.name}";
+
+      buildInputs = [
+        shellForPkg.env.nativeBuildInputs
+
+        super.cutecom
+        super.gnumake
+        super.gcc-arm-embedded
+        super.libev
+
+        hself.cabal-install
+        hself.ghcid
+        hself.emhell
+      ];
+
+      shellHook = ''
+        echo ""
+        echo "Ivory Tower shell for ${shellForPkg.name}"
+
+        export "IVORY_TOWER_PROJECT=${shellForPkg.pname}"
+      '';
+    };
+
   mkRunner = super: image:
     { target ? "/dev/ttyACM0"
     , connectSRST ? "disable"
@@ -122,6 +147,7 @@ self: super:
         defaultConfPlatform = defaultConfPlatform super;
         mkImage = mkImage super;
         mkSchema = mkSchema super hself;
+        mkShell = mkShell super hself;
       });
     });
 }

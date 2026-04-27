@@ -4,4 +4,5 @@
 , ... }:
 let
   itn = (import ./default.nix { inherit compiler pkgs; });
-in itn.mkShell itn.ivorypkgs.${package}
+in
+  itn.ivorypkgs.mkShell itn.ivorypkgs.${package}
