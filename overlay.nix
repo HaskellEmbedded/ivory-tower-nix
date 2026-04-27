@@ -33,11 +33,6 @@ compiler: [
   (import ./nix/can4disco.nix)
   (import ./nix/monstick-firmware.nix)
 
-  # temporary
-  # 2023-12-17: until next release (0.13.0.1+)
-  # only due to uni-patterns warning
-  (import ./nix/language-c-quote.nix)
-
   # temporary until release
   (import ./nix/data-prometheus.nix)
 ]
