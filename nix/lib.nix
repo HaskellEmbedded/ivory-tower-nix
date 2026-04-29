@@ -53,6 +53,7 @@ let
         super.libev
 
         hself.cabal-install
+        hself.cidl
         hself.ghcid
         hself.emhell
       ];
