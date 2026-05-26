@@ -47,10 +47,12 @@ let
       buildInputs = [
         shellForPkg.env.nativeBuildInputs
 
+        super.blackmagic
         super.cutecom
         super.gnumake
         super.gcc-arm-embedded
         super.libev
+        super.openocd
 
         hself.cabal-install
         hself.cidl
